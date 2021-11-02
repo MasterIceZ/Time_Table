@@ -17,7 +17,7 @@ async def kim():
 
 async def social():
 	chan = client.get_channel(ch)
-	res = discord.Embed(title="SO32103", description=c_d("Weerarat", "None"), color=discord.Color.from_rgb(255, 203, 251))
+	res = discord.Embed(title="SO32103/SO32202", description=c_d("Weerarat", "https://meet.google.com/dqz-jefg-got?authuser=0&hs=179"), color=discord.Color.from_rgb(255, 203, 251))
 	await chan.send(embed=res)
 
 async def niwpong():
@@ -27,7 +27,7 @@ async def niwpong():
 
 async def com():
 	chan = client.get_channel(ch)
-	res = discord.Embed(title="SC32182/SC30289", description=c_d("Yuwadee", "None"), color=discord.Color.from_rgb(255, 203, 251))
+	res = discord.Embed(title="SC32182/SC30289", description=c_d("Yuwadee", "https://meet.google.com/fkc-sogg-uhp?authuser=0&hs=179"), color=discord.Color.from_rgb(255, 203, 251))
 	await chan.send(embed=res)
 
 async def bio():
@@ -42,7 +42,7 @@ async def chem():
 
 async def thai():
 	chan = client.get_channel(ch)
-	res = discord.Embed(title="TH32102", description=c_d("Sutchai", "https://meet.google.com/lookup/hqv7ctvox3"), color=discord.Color.from_rgb(255, 203, 251))
+	res = discord.Embed(title="TH32102", description=c_d("Sutchai", "https://meet.google.com/kay-kpqp-ebr?authuser=0&hs=179"), color=discord.Color.from_rgb(255, 203, 251))
 	await chan.send(embed=res)
 
 async def art():
@@ -57,7 +57,7 @@ async def health():
 
 async def parinya():
 	chan = client.get_channel(ch)
-	res = discord.Embed(title="MA23112", description=c_d("Parinya", "https://meet.google.com/lookup/ctqza3zspv"), color=discord.Color.from_rgb(255, 203, 251))
+	res = discord.Embed(title="MA23112", description=c_d("Parinya", "https://meet.google.com/shw-upvo-yjw?authuser=0"), color=discord.Color.from_rgb(255, 203, 251))
 	await chan.send(embed=res)
 
 async def phy():
