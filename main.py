@@ -170,5 +170,16 @@ client = discord.Client()
 async def on_ready():
 	print('hello world')
 
+@client.event
+async def on_message(msg):
+	if msg.author == client.user :
+		return
+	chan = client.get_channel(ch)
+	if msg.channel != chan:
+		return
+	if msg.content == 'ttb':
+		await chan.send(file=discord.File('Table.png'))
+
+
 alive()
 client.run(os.environ['TOKEN'])
