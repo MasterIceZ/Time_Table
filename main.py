@@ -169,6 +169,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
 	print('hello world')
+	await client.change_presence(activity=discord.Game(name="ROBLOX"))
 
 @client.event
 async def on_message(msg):
