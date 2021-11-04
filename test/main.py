@@ -3,7 +3,7 @@ import datetime
 import os
 
 res = requests.get('https://Table.aiceaeng.repl.co')
-if str(res) == '<Response [200]>':
+if str(res) != '<Response [200]>':
     url = "https://notify-api.line.me/api/notify"
     token = os.getenv('LINE_TOKEN')
     headers = {'content-type':'application/x-www-form-urlencoded', 'Authorization': 'Bearer ' + token}
