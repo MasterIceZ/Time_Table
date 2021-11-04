@@ -1,6 +1,6 @@
 import requests
-import random
+import datetime
 
 res = requests.get('https://Table.aiceaeng.repl.co')
 print(res)
-print(random.randint(1, 100))
+print(datetime.datetime.now())
