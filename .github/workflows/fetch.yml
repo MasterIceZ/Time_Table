@@ -16,6 +16,8 @@ jobs:
                   python-version: 3.9
             - name: test
               if: github.event.commits[0].message != 'Commit Response'
+              env: 
+                LINE_TOKEN: ${{ secrets.LINE_TOKEN }}
               run: |
                   cd test
                   python -m pip install --upgrade pip
