@@ -23,6 +23,7 @@ jobs:
                   python -m pip install --upgrade pip
                   pip install requests
                   pip install pytz
+                  pip install linenotif
                   python main.py > response.txt
             - name: Commit test
               run: |
