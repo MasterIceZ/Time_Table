@@ -2,13 +2,12 @@ import requests
 import datetime
 import os
 import pytz
+import linenotif
 
 res = requests.get('https://Table.aiceaeng.repl.co')
 if str(res) != '<Response [200]>':
-    url = "https://notify-api.line.me/api/notify"
-    token = os.getenv('LINE_TOKEN')
-    headers = {'content-type':'application/x-www-form-urlencoded', 'Authorization': 'Bearer ' + token}
-    msg = 'Bot is Down! at ' + str(pytz.timezone('Asia/Bangkok').locaize(datetime.datetime.now()))
-    r = requests.post(url, headers=headers, data={'message':msg})
+    noti = linenotif.Notify()
+    noti.setKey(os.getenv('LINE_TOKEN'))
+    noti.send_message('Bot Down!')
 print(res)
 print(datetime.datetime.now())
